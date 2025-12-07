@@ -1,0 +1,149 @@
+
+{% stylesheet %}
+  .scroller {
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+  .scroller__track {
+    display: flex;
+    width: fit-content;
+  }
+  .scroller__content {
+    display: flex;
+    gap: 2rem;
+  }
+  .scroller__item {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 2rem;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+{% endstylesheet %}
+
+{% style %}
+    #{{ section.id }}.scroller {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      background-color: {{ section.settings.background_color }};
+      color: {{ section.settings.text_color }};
+    }
+
+  #{{ section.id }} .scroller__content {
+    animation: scroll {{ section.settings.speed }}s linear infinite;
+  }
+  #{{ section.id }} .scroller__item {
+    color: {{ section.settings.text_color }};
+  }
+  
+{% endstyle %}
+
+
+<div id="{{ section.id }}" class="scroller">
+  <div class="scroller__track">
+    <div class="scroller__content">
+      {% for block in section.blocks %}
+        <div class="scroller__item" {{ block.shopify_attributes }}>
+          {{ block.settings.text }}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="scroller__content" aria-hidden="true">
+      {% for block in section.blocks %}
+        <div class="scroller__item">
+          {{ block.settings.text }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Scroller",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Scroll Speed",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "unit": "s"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Scrolling text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroller",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
