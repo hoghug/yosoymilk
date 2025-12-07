@@ -1,0 +1,7 @@
+[environments.dev]
+theme = "185582256411"
+store = "yosoymilk"
+
+[environments.live]
+theme = "185581961499"
+store = "yosoymilk"
