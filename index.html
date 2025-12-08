@@ -22,7 +22,7 @@
 
 <body id="page-top" class="index">
 
-    <div class="scroller">
+    <section class="scroller">
         <div class="scroller__track">
             <div class="scroller__content">
                 <div class="scroller__item">Liquid</div>
@@ -51,12 +51,12 @@
                 <div class="scroller__item">Speed Optimization</div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <section class="hero" id="about">
-        <div class="bg-hero">
-            <div class="content">
+    <section class="hero bg--gradient" id="about">
+        <div class="hero__wrapper">
+            <div class="hero__content bg--gradient">
                 <h1>Chris Lind</h1>
                 <p>
                     Full stack + Shopify developer based in <em>Portland,&nbsp;Oregon.</em><br>
@@ -66,10 +66,47 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section class="scroller">
+        <div class="scroller__track">
+            <div class="scroller__content scroller__content--reverse">
+                <div class="scroller__item"><img src="img/logos/couch.png" alt="Couch"></div>
+                <div class="scroller__item"><img src="img/logos/magnolia.webp" alt="Magnolia Bakery"></div>
+                <div class="scroller__item"><img src="img/logos/nike.svg" alt="Nike"></div>
+                <div class="scroller__item"><img src="img/logos/bevmo.png" alt="BevMo"></div>
+                <div class="scroller__item"><img src="img/logos/cyclepathpdx.png" alt="Cyclepath PDX"></div>
+                <div class="scroller__item"><img src="img/logos/gopuff.png" alt="Go Puff"></div>
+                <div class="scroller__item"><img src="img/logos/ornot.png" alt="Ornot"></div>
+                <div class="scroller__item"><img src="img/logos/protalus.png" alt="Protalus"></div>
+                <div class="scroller__item"><img src="img/logos/gbb.png" alt="Good Boy Bob"></div>
+                <div class="scroller__item"><img src="img/logos/ecoatm.png" alt="EcoATM"></div>
+                <div class="scroller__item"><img src="img/logos/1r.webp" alt="onerepublic"></div>
+            </div>
+            <div class="scroller__content scroller__content--reverse">
+                <div class="scroller__item"><img src="img/logos/couch.png" alt="Couch"></div>
+                <div class="scroller__item"><img src="img/logos/magnolia.webp" alt="Magnolia Bakery"></div>
+                <div class="scroller__item"><img src="img/logos/nike.svg" alt="Nike"></div>
+                <div class="scroller__item"><img src="img/logos/bevmo.png" alt="BevMo"></div>
+                <div class="scroller__item"><img src="img/logos/cyclepathpdx.png" alt="Cyclepath PDX"></div>
+                <div class="scroller__item"><img src="img/logos/gopuff.png" alt="Go Puff"></div>
+                <div class="scroller__item"><img src="img/logos/ornot.png" alt="Ornot"></div>
+                <div class="scroller__item"><img src="img/logos/protalus.png" alt="Protalus"></div>
+                <div class="scroller__item"><img src="img/logos/gbb.png" alt="Good Boy Bob"></div>
+                <div class="scroller__item"><img src="img/logos/ecoatm.png" alt="EcoATM"></div>
+                <div class="scroller__item"><img src="img/logos/1r.webp" alt="onerepublic"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlight">
         <div class="container">
-            <!-- <center><h3>Featured Clients / Projects</h3></center> -->
+            <h2>Selected Work</h2>
+            <!-- <p>Some of my recent projects, both freelance and full-time. Click on any to learn&nbsp;more.</p> -->
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <!-- <section id="portfolio">
+        <div class="container">
         	<div class="row">
         			<div class="col-sm-4 portfolio-item" id="couch">
         				<a href="https://couch.co" class="portfolio-link" target="_blank">
@@ -178,24 +215,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
 
-    <footer>
+    <footer class="bg--gradient">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-8 col-lg-offset-2">
                     <h3>Get In Touch</h3>
                     <hr>
                     <a href="mailto:chris@yosoymilk.com"><i class="fa fa-envelope"></i> chris@yosoymilk.com</a>
-<!--                     <a href="https://github.com/hoghug" target="_blank"><i class="fa fa-github"></i> hoghug</a> -->
-					<a href="https://www.linkedin.com/in/chrslnd" target="_blank"><i class="fa fa-linkedin"></i> Chris Lind</a>
+                    <a href="https://github.com/hoghug" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/chrslnd" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <!-- resume? -->
                 </div>
             </div>
@@ -203,7 +234,7 @@
     </footer>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr"><div class="rl"></div></div>
@@ -377,7 +408,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
