@@ -4,10 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   overflow-x: hidden;
-  background-image: url(../img/cartographer.png);
-  background-color: black;
+  /* background-image: url(../img/cartographer.png); */
+  background-color: white;
   color: #1A1A21;
 }
 p {
@@ -24,58 +24,98 @@ h1, h2, h3, h4, h5, h6 {
 .img-centered {
   margin: 0 auto;
 }
-section {
-  padding: 100px 0;
-}
 section h2 {
   margin: 0;
   font-size: 3em;
 }
-section.success {
-  /*background: #18BC9C;*/
+
+/* SCROLLER */
+.scroller {
+  overflow: hidden;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: white;
+  color: black;
+}
+.scroller__track {
+  display: flex;
+  width: fit-content;
+}
+.scroller__content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+}
+.scroller__item {
+  white-space: nowrap;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* HERO */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#about {
   min-height: 600px;
   height: 600px;
   height: 100vh;
-  background-image: url('../img/hero1.png');
+  padding: 5vw;
+  background: linear-gradient(90deg, #011716 -10.22%, #8eaa98 143.78%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+#about .bg-hero {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('../img/hero1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  background-blend-mode: luminosity;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .content {
   color: white;
-  background-attachment: fixed;
-}
-section.success .back-bar {
-  width: 100%;
-  mix-blend-mode: multiply;
-  padding: 1em 2em 1em 5%;
-  background-color: #d85656;
-  background: linear-gradient(to right, #d85656, white 75%);
+  background: linear-gradient(90deg, #011716 -10.22%, #8eaa98 143.78%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding: 1rem 5rem;
 }
 
-@media (max-width: 767px) {
-  section.success .back-bar {
-    background: #d85656;
-
-  }
-
-}
-
-section.success .back-bar h1 {
-  font-size: 4em;
+#about .content h1 {
+  font-size: 3em;
   letter-spacing: .05em;
 }
-section.success .back-bar p {
+#about .content p {
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
-@media (max-width: 767px) {
-  section {
-    padding: 75px 0;
-  }
-  section.first {
-    padding-top: 75px;
-  }
-}
+
+/* Portfolio Grid */
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;

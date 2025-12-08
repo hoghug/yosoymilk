@@ -6,57 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Chris Lind - Portland - Shopify + Full Stack Developer - </title>
+    <title>Chris Lind - Portland - Shopify + Full Stack Developer</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
 
 </head>
 
 <body id="page-top" class="index">
 
+    <div class="scroller">
+        <div class="scroller__track">
+            <div class="scroller__content">
+                <div class="scroller__item">Liquid</div>
+                <div class="scroller__item">Javascript</div>
+                <div class="scroller__item">Rails</div>
+                <div class="scroller__item">React</div>
+                <div class="scroller__item">Vue</div>
+                <div class="scroller__item">CSS/SCSS</div>
+                <div class="scroller__item"><s>Design</s></div>
+                <div class="scroller__item">Tailwind</div>
+                <div class="scroller__item">Typescript</div>
+                <div class="scroller__item">Accessibility</div>
+                <div class="scroller__item">CLS Optimization</div>
+            </div>
+            <div class="scroller__content">
+                <div class="scroller__item">Liquid</div>
+                <div class="scroller__item">Javascript</div>
+                <div class="scroller__item">Rails</div>
+                <div class="scroller__item">React</div>
+                <div class="scroller__item">Vue</div>
+                <div class="scroller__item">CSS/SCSS</div>
+                <div class="scroller__item"><s>Design</s></div>
+                <div class="scroller__item">Tailwind</div>
+                <div class="scroller__item">Typescript</div>
+                <div class="scroller__item">Accessibility</div>
+                <div class="scroller__item">CLS Optimization</div>
+            </div>
+        </div>
+    </div>
+
     <!-- About Section -->
-    <section class="success" id="about">
-        <div class="back-bar">
-            <h1>Chris Lind</h1>
-            <p>
-                Full stack + Shopify developer based in Portland,&nbsp;Oregon.<br>
-                I pride myself on scalability &amp; keyboard&nbsp;shortcuts.<br>
-            </p>
+    <section class="hero" id="about">
+        <div class="bg-hero">
+            <div class="content">
+                <h1>Chris Lind</h1>
+                <p>
+                    Full stack + Shopify developer based in <em>Portland,&nbsp;Oregon.</em><br>
+                    I pride myself on scalability &amp; keyboard&nbsp;shortcuts.<br>
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
+            <!-- <center><h3>Featured Clients / Projects</h3></center> -->
         	<div class="row">
-        			<div class="col-sm-4 portfolio-item" id="pro-if">
+        			<div class="col-sm-4 portfolio-item" id="couch">
         				<a href="https://couch.co" class="portfolio-link" target="_blank">
-        					<div class="preview" style="background-image:url(img/couch.png); background-color: black;"></div>
+        					<div class="preview" style="background-image:url(img/couch.png); background-color: white;"></div>
         				</a>
         			</div>
-        			<div class="col-sm-4 portfolio-item" id="pro-cp">
+        			<div class="col-sm-4 portfolio-item" id="magnolia">
         				<a href="https://magnoliabakery.com" class="portfolio-link" target="_blank">
 	        				<div class="preview" style="background-image:url(img/magnolia.webp); background-color: white;"></div>
         				</a>
         			</div>
+        			<div class="col-sm-4 portfolio-item" id="ornot">
+        				<a href="#" class="portfolio-link">
+	        				<div class="preview" style="background-image:url(img/ornot.png); background-color: white;"></div>
+        				</a>
+        			</div>
         		</div>	
 			<div class="row">
-        			<div class="col-sm-4 portfolio-item" id="pro-if">
-        				<a href="https://protalus.com/pages/find-your-perfect-insole" class="portfolio-link" target="_blank">
-        					<div class="preview" style="background-image:url(img/pro_if.png); background-color: white;"></div>
+        			<div class="col-sm-4 portfolio-item" id="gopuff">
+        				<a href="#" class="portfolio-link">
+        					<div class="preview" style="background-image:url(img/protalus.png); background-color: white;"></div>
+        				</a>
+        			</div>
+        			<div class="col-sm-4 portfolio-item" id="gopuff">
+        				<a href="#" class="portfolio-link">
+        					<div class="preview" style="background-image:url(img/gopuff.png); background-color: white;"></div>
         				</a>
         			</div>
         			<div class="col-sm-4 portfolio-item" id="pro-cp">
-        				<a href="https://protalus.com/pages/closet-pack" class="portfolio-link" target="_blank">
-	        				<div class="preview" style="background-image:url(img/pro_cp.png); background-color: white;"></div>
+        				<a href="#" class="portfolio-link">
+	        				<div class="preview" style="background-image:url(img/bevmo.png); background-color: white;"></div>
         				</a>
         			</div>
         		</div>
             <div class="row">
+                <div class="col-sm-4 portfolio-item" id="nsp">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="preview" style="background-image:url(img/nike_logo.svg); background-color: #F9F9FA;"></div>
+                    </a>
+                </div>
                 <div class="col-sm-4 portfolio-item" id="sandh">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -75,16 +133,6 @@
                             </div>
                         </div>
                         <div class="preview" style="background-image:url(img/notch_logo.png); background-color: #1A1A21;"></div>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item" id="nsp">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="preview" style="background-image:url(img/nike_logo.svg); background-color: #F9F9FA;"></div>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" id="dwp">
@@ -118,16 +166,6 @@
                         <div class="preview" style="background-image:url(img/1r_logo.png); background-color: #000000;"></div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item" id="berry">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="preview" style="background-image:url(img/berry_logo.png); background-color: #fbf3e4;"></div>
-                    </a>
-                </div>
                 <div class="col-sm-4 portfolio-item" id="consano">
                     <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -136,16 +174,6 @@
                             </div>
                         </div>
                         <div class="preview" style="background-image:url(img/consano_logo.png); background-color: #f1f1f1;"></div>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item" id="conway">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="preview" style="background-image:url(img/conway_logo.png); background-color: #fafbfb;"></div>
                     </a>
                 </div>
             </div>
@@ -326,31 +354,6 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr"><div class="rl"></div></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Thomas Berry <a href="http://thomasberry.org" target="_blank"><i class="fa fa-external-link"></i></a></h2>
-                            <img src="img/portfolio/berry.png" class="img-responsive img-centered" alt="">
-                            <hr>
-                            <p>This site was built using Craft CMS, my first time. While there was a learning curve to how everything needed to be setup, I enjoyed the functionality and eventual ease of the system. I now use Craft to build client sites that don't need a completely custom CMS. In the process, there were quite a few design revisions, coupled with arduous browser&nbsp;testing. </p>
-                            <ul class="list-inline item-details">
-                                <li>Craft</li>
-                                <li>Twig</li>
-                                <li>jQuery</li>
-                                <li>HTML/SASS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -368,29 +371,6 @@
                                 <li>Rails</li>
                                 <li>HTML/SASS</li>
                                 <li>Paypal API</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr"><div class="rl"></div></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Conway's Game of Life <a href="http://auto-conway.surge.sh/" target="_blank"><i class="fa fa-external-link"></i></a></h2>
-                            <hr>
-                            <p>Conway's game of life simulation for a display we had in the office.</p>
-                            <ul class="list-inline item-details">
-                                <li>jQuery</li>
-                                <li>Javascript</li>
                             </ul>
                         </div>
                     </div>
