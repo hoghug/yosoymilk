@@ -28,6 +28,11 @@ section h2 {
   font-size: 3em;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
